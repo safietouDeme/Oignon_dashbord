@@ -1,0 +1,391 @@
+/* ==========================================================
+   DASHBOARD - ONIONOPT
+   ========================================================== */
+
+:root{
+
+    --primary:#2E7D32;
+    --primary-light:#E8F5E9;
+    --secondary:#F9A825;
+
+    --background:#F4F7FA;
+
+    --card:#FFFFFF;
+
+    --text:#243447;
+
+    --text-light:#6B7280;
+
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+    --shadow-hover:0 18px 45px rgba(0,0,0,.15);
+
+    --radius:22px;
+
+}
+
+
+/* ========================================================== */
+
+.dashboard-page{
+
+    background:var(--background);
+
+    min-height:100vh;
+
+    padding:35px;
+
+}
+
+
+/* ========================================================== */
+
+.page-title{
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:var(--text);
+
+    margin-bottom:35px;
+
+}
+
+
+/* ==========================================================
+SIDEBAR
+========================================================== */
+
+.sidebar{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+    position:sticky;
+
+    top:25px;
+
+}
+
+
+.sidebar-title{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+
+.sidebar label{
+
+    font-weight:600;
+
+    color:var(--text);
+
+    margin-bottom:8px;
+
+}
+
+
+.sidebar input{
+
+    border-radius:12px !important;
+
+    border:1px solid #d9dee5 !important;
+
+    height:48px;
+
+}
+
+
+.sidebar input:focus{
+
+    border-color:var(--primary)!important;
+
+    box-shadow:0 0 0 .18rem rgba(46,125,50,.15);
+
+}
+
+
+.sidebar .btn{
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    padding:13px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+.sidebar .btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================================================
+KPI
+========================================================== */
+
+.kpi-card{
+
+    border:none;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:white;
+
+}
+
+
+.kpi-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    height:5px;
+
+    width:100%;
+
+    background:linear-gradient(90deg,#2E7D32,#66BB6A);
+
+}
+
+
+.kpi-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+
+.kpi-card .card-body{
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+.kpi-icon{
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
+}
+
+
+.kpi-card h3{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+
+.kpi-card p{
+
+    margin-top:10px;
+
+    color:var(--text-light);
+
+    font-weight:500;
+
+}
+
+
+/* ==========================================================
+CHARTS
+========================================================== */
+
+.chart-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:22px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    margin-bottom:25px;
+
+}
+
+
+.chart-card:hover{
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+
+.chart-card h4{
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:var(--text);
+
+}
+
+
+/* placeholder */
+
+.chart-placeholder{
+
+    height:320px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:3px dashed #D7DCE2;
+
+    border-radius:18px;
+
+    background:#FBFCFD;
+
+    color:#9CA3AF;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+TABLE
+========================================================== */
+
+.dash-table-container{
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ==========================================================
+SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#EDF1F5;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#B5BDC8;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#8E98A6;
+
+}
+
+
+/* ==========================================================
+RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+.dashboard-page{
+
+padding:20px;
+
+}
+
+.sidebar{
+
+position:relative;
+
+top:0;
+
+margin-bottom:30px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.page-title{
+
+font-size:2rem;
+
+text-align:center;
+
+}
+
+.kpi-card{
+
+margin-bottom:20px;
+
+}
+
+.chart-placeholder{
+
+height:250px;
+
+}
+
+}

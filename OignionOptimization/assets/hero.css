@@ -1,0 +1,305 @@
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero-section{
+
+    position:relative;
+
+    min-height:95vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    background-image:url("hero-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+
+/* Overlay */
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(12,33,20,.75),
+        rgba(25,65,40,.82)
+    );
+
+}
+
+
+/* Container */
+
+.hero-container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:1300px;
+
+}
+
+
+/* Content */
+
+.hero-content{
+
+    max-width:720px;
+
+    color:white;
+
+}
+
+
+/* Badge */
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(8px);
+
+    margin-bottom:25px;
+
+    letter-spacing:1px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+
+/* Titre */
+
+.hero-title{
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    margin-bottom:30px;
+
+}
+
+
+/* Description */
+
+.hero-description{
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+    opacity:.95;
+
+    margin-bottom:45px;
+
+}
+
+
+/* Boutons */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:60px;
+
+}
+
+
+/* Bouton principal */
+
+.hero-btn{
+
+    background:#2E7D32;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    font-size:18px;
+
+    transition:.35s;
+
+}
+
+
+.hero-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#3FA34D;
+
+}
+
+
+/* Bouton secondaire */
+
+.hero-btn-outline{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+.hero-btn-outline:hover{
+
+    background:white;
+
+    color:#2E7D32;
+
+}
+
+
+/* Statistiques */
+
+.hero-stats{
+
+    display:flex;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* Carte statistique */
+
+.hero-stat{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(12px);
+
+    padding:22px 35px;
+
+    border-radius:20px;
+
+    min-width:170px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+
+.hero-stat:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.hero-stat h2{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:#F9C74F;
+
+}
+
+
+.hero-stat p{
+
+    margin-top:10px;
+
+    margin-bottom:0;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero-title{
+
+font-size:3rem;
+
+}
+
+.hero-description{
+
+font-size:1rem;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.hero-title{
+
+font-size:2.4rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-btn,
+.hero-btn-outline{
+
+width:100%;
+
+}
+
+.hero-stats{
+
+justify-content:center;
+
+}
+
+}

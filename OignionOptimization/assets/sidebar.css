@@ -1,0 +1,55 @@
+.sidebar{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0px 5px 18px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+.sidebar-title{
+
+    color:#2E7D32;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.sidebar label{
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.sidebar .form-control{
+
+    border-radius:10px;
+
+}
+
+.sidebar .btn{
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+.sidebar .card{
+
+    border:none;
+
+    background:#f7f7f7;
+
+}
